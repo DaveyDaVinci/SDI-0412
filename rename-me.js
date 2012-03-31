@@ -1,1 +1,2 @@
-alert("Project 2!");
+alert("Hello World!");
+console.log("Added line of code in my branch.")
