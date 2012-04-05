@@ -17,13 +17,13 @@ var self = "Wes",
 // c: code, w: world of warcraft, r: rest more
 var  c = true, w = false, r = false; 
 
-console.log("WOWing these days equals a big " + ((c && ww) || rM));
+console.log("WOWing these days equals a big " + ((c && w) || r));
 
 // Boolean
 var quitPlaying = true, time = 1;
 
 if (quitPlaying === true) {
-	console.log("He likes to wake up and play XboX for a few hours.");
+	console.log("Wes likes to wake up and play XboX for a few hours.");
 	if (time >= 1) {
 		console.log("He will only play for 2 hours though."); 
 	} else {
@@ -83,14 +83,6 @@ while (hoursOnCode > 0) {
 
 console.log("Hours are up. He can rest for awhile.");
 
-// Boolean logic
-// r: rest, s: social, c: code
-var  r = true, s = false, c = true; 
-
-console.log("WOWing these days equals a big " + !s);
-
-
-
 // String Function
 
 var a = "email",
@@ -132,7 +124,7 @@ var sleep = function(timeSpent) {
 	var timeSpentSleeping = 7, 
 		allNight;
 	if (timeSpent < timeSpentSleeping) {
-		console.log("Wes should sleep now.");
+		console.log("Wes should sleep now?");
 		allNight = 8;
 	}
 	else {
