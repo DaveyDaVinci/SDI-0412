@@ -13,6 +13,11 @@ var self = "Wes",
 
 	console.log(self + " no longer plays " + wow + ". He plays " + system + " instead.")
 ;
+// Boolean logic
+// c: code, w: world of warcraft, r: rest more
+var  c = true, w = false, r = false; 
+
+console.log("WOWing these days equals a big " + ((c && ww) || rM));
 
 // Boolean
 var quitPlaying = true, time = 1;
@@ -78,6 +83,14 @@ while (hoursOnCode > 0) {
 
 console.log("Hours are up. He can rest for awhile.");
 
+// Boolean logic
+// r: rest, s: social, c: code
+var  r = true, s = false, c = true; 
+
+console.log("WOWing these days equals a big " + !s);
+
+
+
 // String Function
 
 var a = "email",
@@ -115,7 +128,37 @@ for (var i=0, j=check.length; i < j; i++) {
 };
 
 // Returned Values
+var sleep = function(timeSpent) {
+	var timeSpentSleeping = 7, 
+		allNight;
+	if (timeSpent < timeSpentSleeping) {
+		console.log("Wes should sleep now.");
+		allNight = 8;
+	}
+	else {
+		allNight = Math.floor(timeSpent / timeSpentSleeping);
+	}
+	return allNight; 
+};
+
+var getRest = sleep(1);
+
+		var  t = true, s = true, e = false, r = false; 
+			console.log(!r && !e) || (!s && !t);
+
+console.log("Wes gets a full " + getRest + " hours of sleep!");
 
 // Output
+var minutes = 60,
+	hours = 20,
+	total = hours * 60,
+	time
+;
+
+time = minutes * hours;
+
+
+console.log( "time:", total + " minutes spent throughout the day doing something productive." );
 
 // Finish!
+console.log("Wes has 240 minutes of free time left to himself.")
