@@ -94,11 +94,6 @@ var a = "email",
 console.log("Will Wes check " + a + ", " +  b + " or " + c + " first? Or just " + d + " when he is done resting?");
 
 // Array Function
-var a = "emails",
-	b = "twitter",
-	c = "iPhone",
-	d = "code"
-;
 
 var check = [
 	"emails",
