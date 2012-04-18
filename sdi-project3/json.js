@@ -6,16 +6,24 @@
 var group = {
 	"characters":{
 		"priest":{
+			"race": "human",
 			"role": "healer",
-			"level": "3"
+			"level": "7"
 		},
 		"warrior":{
+			"race": "dwarf",
 			"role": "tank",
-			"level": "6"
+			"level": "1"
 		},
 		"mage":{
+			"race": "gnome",
 			"role": "aoe",
 			"level": "4"
+		},
+		"thief":{
+			"race": "dark elf",
+			"role": "stealing",
+			"level": "10"
 		}
 	}
 };
@@ -23,19 +31,28 @@ var group = {
 var group2 = {
 	"characters":[
 		{
-			"player": "preist",
+			"player": "priest",
+			"race": "human",
 			"role": "healer",
-			"level": "3"
+			"level": "7"
 		},
 		{
 			"player": "warrior",
+			"race": "dwarf",
 			"role": "tank",
-			"level": "6"
+			"level": "1"
 		},
 		{
 			"player": "mage",
+			"race": "gnome",
 			"role": "aoe",
 			"level": "4"
+		},
+		{
+			"player": "thief",
+			"race": "dark elf",
+			"role": "stealing",
+			"level": "10"
 		}
 	]
 };
