@@ -32,6 +32,18 @@ if (weakTank === true) {
 	console.log("look for a better warrior.");
 };
 
+// ****** Output
+var hitPoints = 1,
+	level = 15,
+	total = level * 1,
+	damage
+;
+
+damage = hitPoints * 15;
+
+
+console.log( "warriors hit points = ", total + " as of now." );
+
 var player = function(warrior){
 	var level = 10,
 		currentLevel, groupGreet;
@@ -41,9 +53,6 @@ var player = function(warrior){
 	groupGreet = "Puny " + currentLevel + ", " + warrior + "!";
 	return groupGreet;
 }
-
-var almostGood = player("Warrior");
-console.log(almostGood);
 
 // ****** Argument Number
 var maxLevels = 15;
@@ -85,8 +94,15 @@ while (mgwr > 0) {
 	mgwr--;
 };
 
-console.log("The group (meaning the puny noob warrior) needs to go out and level up more.");
+console.log("The group needs to level up more.");
+
+// ****** Output
+var warriorsLevel = 3,
+	levelsNeeded = 12,
+	levelsToGo
+;
+
+levelsToGo = warriorsLevel + levelsNeeded;
 
 
-
-
+console.log( "Our puny warrior needs to reach level ", levelsToGo + ", and fast." );
