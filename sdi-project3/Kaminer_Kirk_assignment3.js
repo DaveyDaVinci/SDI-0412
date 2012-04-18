@@ -8,8 +8,8 @@ alert("Project 3!");
 var handleData = function (group){
 	for (var i = 0; i < group.characters.length; i++){
 		var character = group.characters[i];
-		console.log("Class: " + character.player +", Role: " + character.role + ", Level: " +
-		character.level);
+		console.log("Class: " + character.player +", Race: " + character.race + ", Role: " +
+		character.role + ", Level: " + character.level);
 	};
 };
 
