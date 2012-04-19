@@ -59,28 +59,28 @@ var maxLevels = 15;
 
 if (maxLevels === 0) {
 	console.log("No point in continuing our quest.");
-	if (moreLevels = 5) {
+	if (moreLevels = 0) {
 		console.log("YAY! We can continue"); 
 	} else {
 		console.log("Dead!");
 	};
 } else {
-	console.log("Find a dungeon so we can level up. ");
+	console.log("They begin there quest. ");
 };
 
 var group ={
 	name:"The Furious Few",
 	quest: function(quest){
-		console.log("The " + name + " begins there quest.")
+		console.log("The " + name + " ventures out for a fight.")
 	}
 };
 group.quest(true);
 
 // while loop
-var mgwr = 5; 
-while (mgwr > 0) {
-	console.log(mgwr + " minutes have past.");
-	mgwr--;
+var mghq = 5;  // mghq: minutes group has quested
+while (mghq > 0) {
+	console.log(mghq + " minutes have past.");
+	mghq--;
 };
 
 console.log("The groups dexterity drains.");
@@ -132,4 +132,29 @@ console.log("The Furious Few all faint due to fatigue.");
 var dexNeeded = function(dex) {
 		dex = 1;	
 		return dex; 
+};
+
+// array argument
+var player1 = "healer",
+	player2 = "warrior",
+	player3 = "mage",
+	player4 = "thief"
+;
+
+var race = [
+	"human's",
+	"dwarf's",
+	"gnome's",
+	"dark elf's"
+];
+
+var adjectives = [
+	"heals other players.",
+	"attempts to tank monsters",
+	"uses area of effect spells",
+	"steals gold"
+];
+
+for (var i=0, j=race.length; i < j; i++){
+	console.log( "The " + race[i] + " role was to " + adjectives[i] );
 };
