@@ -158,3 +158,19 @@ var adjectives = [
 for (var i=0, j=race.length; i < j; i++){
 	console.log( "The " + race[i] + " role was to " + adjectives[i] );
 };
+
+
+//using your code from ichat
+
+var obj = {
+	haveMail: true,
+	getMail: function (mail){
+		if (mail === true){
+			console.log("Yay, got my mail.")
+		} else {
+			console.log("Boo, no mail for me.")
+		};
+	}
+};
+
+obj.getMail(obj.haveMail);
