@@ -129,3 +129,17 @@ for (var levels = 12; levels >= 3; levels--) {
 };
 
 console.log("Like magic, the puny warrior dings at level 15.");
+
+
+
+/* Examples for methods:
+
+var encounter = {
+	bossName: "Herp",
+	bossHp: function (callOutsideObject){
+		thisfunctiondoessomething
+	}
+};
+
+encounter.bossHp(callOutsideObject);
+*/
