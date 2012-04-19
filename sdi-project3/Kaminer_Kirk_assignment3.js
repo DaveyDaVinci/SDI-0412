@@ -18,7 +18,7 @@ var handleData = function (group){
 
 handleData(group2);
 
-// ****** Boolean argument
+// ****** Argument: Boolean
 var weakTank = true, hitPoints = 1;
 
 if (weakTank === true) {
@@ -54,7 +54,7 @@ var player = function(warrior){
 	return groupGreet;
 }
 
-// ****** Argument Number
+// ****** Argument: Number
 var maxLevels = 15;
 
 if (maxLevels === 0) {
@@ -105,4 +105,27 @@ var warriorsLevel = 3,
 levelsToGo = warriorsLevel + levelsNeeded;
 
 
-console.log( "Our puny warrior needs to reach level ", levelsToGo + ", and fast." );
+console.log( "Our puny warrior is now level 3 but needs to reach level ", levelsToGo + ", and fast." );
+
+// ****** Argument: Object
+var objName = {
+	warrior: "getting stronger",
+	level: 3,
+	levelsNeeded: [12]
+};
+
+if(warriorsLevel === 3){
+	console.log("he is getting stronger.");
+}
+else(levelsToGo === 12);{
+	console.log("but has 12 more levels to go before the group can take on the Minotaur.");
+}
+
+console.log("Puny warrior drinks a mug of ale!")
+
+// ****** For Loop
+for (var levels = 12; levels >= 3; levels--) {
+	console.log(levels + " levels remain before he hits....");
+};
+
+console.log("Like magic, the puny warrior dings at level 15.");
