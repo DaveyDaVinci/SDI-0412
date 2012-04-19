@@ -18,47 +18,47 @@ var handleData = function (group){
 
 handleData(group2);
 
-// ****** Argument: Boolean
-var weakTank = true, hitPoints = 1;
-
-if (weakTank === true) {
-	console.log("awesome! We have a tank! Our group can win battles...");
-	if (hitPoints >= 1) {
-		console.log("Hope he is strong"); 
-	} else {
-		console.log("Awkward!");
-	};
-} else {
-	console.log("look for a better warrior.");
-};
-
-// ****** Output
-var hitPoints = 1,
-	level = 15,
-	total = level * 1,
-	damage
-;
-
-damage = hitPoints * 15;
-
-
-console.log( "warriors hit points = ", total + " as of now." );
-
-var player = function(warrior){
-	var level = 10,
-		currentLevel, groupGreet;
-	if (level < 1){ currentLevel = "noob";}
-	else if (level < 10){ currentLevel = "getting better";}
-	else{ currentLevel = "noob";}
-	groupGreet = "Puny " + currentLevel + ", " + warrior + "!";
-	return groupGreet;
+// boolean argument
+var players = (true),
+	name = "Furious Few";
+if (players)
+console.log( "Great! We have our " + name);
+else{
+	console.log("Where did everyone go?");
 }
 
-// ****** Argument: Number
+// output
+var groupAmount = 4,
+	hp = 1,
+	weakGroup = groupAmount * 1,
+	damage
+;
+damage = hp * 15;
+
+console.log( "The warriors hit points = ", damage + " though." );
+
+// return
+var buyArmor = function(gold) {
+	var priceForArmor = 20, 
+		bronzeArmor;
+	if (gold < priceForArmor) {
+		console.log("NOT ENOUGH GOLD!");
+		bronzeArmor = 1;
+	}
+	else {
+		bronzeArmor = Math.floor(gold / priceForArmor);
+	}
+	return bronzeArmor; 
+};
+
+var armorGot = buyArmor(20);
+console.log("The group bought " + armorGot + " suit of armor for the warrior.");
+
+// number argument
 var maxLevels = 15;
 
 if (maxLevels === 0) {
-	console.log("No point in continuing our journey.");
+	console.log("No point in continuing our quest.");
 	if (moreLevels = 5) {
 		console.log("YAY! We can continue"); 
 	} else {
@@ -68,64 +68,68 @@ if (maxLevels === 0) {
 	console.log("Find a dungeon so we can level up. ");
 };
 
-// ****** Number Function
-var totalGroupSize = 4;
-var highestLevelInGroup = 10;
-					
-var totalLevels = function() {
-	var levels = 2;
-	return levels;
+var group ={
+	name:"The Furious Few",
+	quest: function(quest){
+		console.log("The " + name + " begins there quest.")
+	}
 };
+group.quest(true);
 
-var LevelsTotal = function(group, levels, message){
-	console.log(group + " has gained " + levels + " levels for each player, " + message);
-};
-
-var levels = totalLevels(15);
-LevelsTotal("The Group", levels, "and has grown stronger.");
-
-
-console.log("The group will now rest at the inn for awhile.")
-
-// ****** While Loop
-var mgwr = 30; 
+// while loop
+var mgwr = 5; 
 while (mgwr > 0) {
-	console.log(mgwr + " minutes the group has rested at the inn.");
+	console.log(mgwr + " minutes have past.");
 	mgwr--;
 };
 
-console.log("The group needs to level up more.");
+console.log("The groups dexterity drains.");
 
-// ****** Output
-var warriorsLevel = 3,
-	levelsNeeded = 12,
-	levelsToGo
+// output
+var dexAmount = 0,
+	weakGroup = dexAmount * 1,
+	lol
 ;
+lol = weakGroup;
 
-levelsToGo = warriorsLevel + levelsNeeded;
+console.log( "All of The Furious Fews dexterity drops to ", lol + "." );
 
-
-console.log( "Our puny warrior is now level 3 but needs to reach level ", levelsToGo + ", and fast." );
-
-// ****** Argument: Object
-var objName = {
-	warrior: "getting stronger",
-	level: 3,
-	levelsNeeded: [12]
+// return
+var dexNeeded = function(dex) {
+		dex = 0;	
+		return dex; 
 };
 
-if(warriorsLevel === 3){
-	console.log("he is getting stronger.");
-}
-else(levelsToGo === 12);{
-	console.log("but has 12 more levels to go before the group can take on the Minotaur.");
-}
+// object argument
+var player1 = { role: "healer", hp: 50, mp: 500, dex: 0 };
+var player2 = { role: "warrior", hp: 15, mp: 10, dex: 0 };
+var player3 = { role: "mage", hp: 60, mp: 700, dex: 0 };
+var player4 = { role: "thief", hp: 150, mp: 100, dex: 0 };
 
-console.log("Puny warrior drinks a mug of ale!")
+function groupStats(){
+	console.log(this.role + " has stats of " +
+		"hp:" + this.hp + " mp:" + this.mp + " dex:" + this.dex + "!");
+};
+
+player1.details = groupStats;
+player2.details = groupStats;
+player3.details = groupStats;
+player4.details = groupStats;
+
+player1.details();
+player2.details();
+player3.details();
+player4.details();
 
 // ****** For Loop
-for (var levels = 12; levels >= 3; levels--) {
-	console.log(levels + " levels remain before he hits....");
-};
+for (var secs = 5; secs >= 0; secs--) {
+	console.log(secs + " seconds");
+}
 
-console.log("Like magic, the puny warrior dings at level 15.");
+console.log("The Furious Few all faint due to fatigue.");
+
+// return
+var dexNeeded = function(dex) {
+		dex = 1;	
+		return dex; 
+};
