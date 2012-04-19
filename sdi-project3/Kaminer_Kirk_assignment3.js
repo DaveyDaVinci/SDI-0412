@@ -158,3 +158,18 @@ var adjectives = [
 for (var i=0, j=race.length; i < j; i++){
 	console.log( "The " + race[i] + " role was to " + adjectives[i] );
 };
+
+//Object with Methods(functions)
+
+var bossBattle = {		//remember, an object is basically an array with {} instead of []
+	bossName: "Ajore",
+	youAreStrong: true,
+	bossIsHard: true,
+	bossDefeated function(strong){ //this is a method.  It is simply a function inside of the bossBattle object.
+		if (strong === true){
+			return true // returned boolean
+		} else {return false};
+	}
+};
+
+var youWin(bossBattle.youAreStrong); // names the variable the function will use, and gives us a variable to store data in for the return.
